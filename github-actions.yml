@@ -14,13 +14,14 @@ jobs:
           root_file: |
             __FILES_GO_HERE__
           latexmk_use_xelatex: true
+          continue_on_error: true
           extra_fonts: |
-            ./fonts/*.ttf
+            ./*.ttf
       - name: Upload PDF file to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
-          destination_dir: 
+          destination_dir: ''
           keep_files: true
