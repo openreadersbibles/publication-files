@@ -1,5 +1,5 @@
 body {
-    font-family:__BIBLICAL_FONT__, Georgia, serif;
+    font-family: __BIBLICAL_FONT__, Georgia, serif;
     line-height: 1.5;
     margin: 2em;
     max-width: 800px;
@@ -43,6 +43,7 @@ html[lang='grc'] {
     vertical-align: super;
     font-size: 0.7em;
     position: relative;
+    display: inline-block;
 }
 
 .annotation {
@@ -81,4 +82,12 @@ div[dir='ltr'] .gloss:not(:last-child)
 
 .gloss {
     font-style: italic;
+}
+
+.lexical-form {
+    font-family: __BIBLICAL_FONT__, Georgia, serif;
+}
+
+.wd {
+    white-space: nowrap;
 }
