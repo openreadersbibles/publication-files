@@ -272,4 +272,6 @@
 
 }
 
+\def\FootnoteStyle#1{\typeout{TODO! Ignoring: #1}}
+
 \endinput
