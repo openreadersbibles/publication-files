@@ -22,8 +22,8 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: '__PUBLICATION_CONFIGURATION__'
           publish_branch: gh-pages
           destination_dir: '__PUBLICATION_CONFIGURATION__'
           keep_files: false
-          exclude_assets: '**.xdv,**.log,**.fls,**.fdb_latexmk,**.aux'
+          exclude_assets: '**.xdv,**.log,**.fls,**.fdb_latexmk,**.aux,**.tex,fonts/**,.github/**,openreader.cls'
