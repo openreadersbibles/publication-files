@@ -23,6 +23,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
-          destination_dir: ''
+          destination_dir: '__PUBLICATION_CONFIGURATION__'
           keep_files: false
           exclude_assets: '**.xdv,**.log,**.fls,**.fdb_latexmk,**.aux'
