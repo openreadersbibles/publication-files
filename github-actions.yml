@@ -26,4 +26,4 @@ jobs:
           publish_branch: gh-pages
           destination_dir: '__PUBLICATION_CONFIGURATION__'
           keep_files: false
-          exclude_assets: '**.xdv,**.log,**.fls,**.fdb_latexmk,**.aux,**.tex,fonts/**,.github/**'
+          exclude_assets: '**.xdv,**.log,**.fls,**.fdb_latexmk,**.aux,**.tex,fonts/**,.github/**,openreader.cls'
