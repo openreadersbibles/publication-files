@@ -27,3 +27,7 @@ jobs:
           destination_dir: '__PUBLICATION_CONFIGURATION__'
           keep_files: false
           exclude_assets: '**.xdv,**.log,**.fls,**.fdb_latexmk,**.aux,**.tex,fonts/**,.github/**,openreader.cls'
+      - name: Create and index for the page
+        uses: openreadersbibles/create-indices-action@production
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
