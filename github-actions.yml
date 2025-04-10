@@ -26,7 +26,7 @@ jobs:
           publish_branch: gh-pages
           destination_dir: '__PUBLICATION_CONFIGURATION__'
           keep_files: true
-          exclude_assets: '**.xdv,**.log,**.fls,**.fdb_latexmk,**.aux,**.tex,fonts/**,.github/**,openreader.cls'
+          exclude_assets: '**.xdv,**.log,**.fls,**.fdb_latexmk,**.aux,**.tex,fonts/**,.github/**,.github/workflows/**,openreader.cls'
       - name: Create and index for the page
         uses: openreadersbibles/create-indices-action@production
         with:
