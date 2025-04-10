@@ -38,6 +38,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
   deploy:
+    needs: build_latex # Ensure this job runs after build_latex
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
