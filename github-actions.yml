@@ -1,6 +1,9 @@
 name: Build LaTeX document
 
-on: [push, workflow_dispatch]
+on: 
+  push:
+    branches: [$default-branch]
+  workflow_dispatch:
 
 permissions:
   contents: write      
