@@ -80,7 +80,7 @@ div[dir='rtl'] .ketiv-qere:not(:last-child)
 div[dir='ltr'] .parsing:not(:last-child), 
 div[dir='ltr'] .lexical-form:not(:last-child), 
 div[dir='ltr'] .gloss:not(:last-child), 
-div[dir='rtl'] .ketiv-qere:not(:last-child) 
+div[dir='ltr'] .ketiv-qere:not(:last-child) 
 {
     margin-right: 0.5rem;
 }
