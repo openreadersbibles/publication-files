@@ -1,4 +1,5 @@
 function toggleAnnotation(toggleElement) {
+    hideAllAnnotations();
     const annotation = toggleElement.firstElementChild;
     if (annotation.classList.contains('hidden')) {
         annotation.classList.remove('hidden');
@@ -17,9 +18,13 @@ document.addEventListener('click', function (event) {
     if (!event.target.classList.contains('annotation') &&
         !event.target.classList.contains('annotation-toggle')) {
         // Hide all annotations
-        const annotations = document.querySelectorAll('.annotation');
-        annotations.forEach(function (annotation) {
-            annotation.classList.add('hidden');
-        });
+        hideAllAnnotations();
     }
 });
+
+function hideAllAnnotations() {
+    const annotations = document.querySelectorAll('.annotation');
+    annotations.forEach(function (annotation) {
+        annotation.classList.add('hidden');
+    });
+}
