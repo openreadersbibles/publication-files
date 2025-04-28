@@ -27,7 +27,7 @@
 \titleformat{\section}[runin]{\selectmainlanguage\bfseries}{}{}{}
 
 \RequirePackage{fontspec}
-\RequirePackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\RequirePackage[a4paper,top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 
 
 \RequirePackage{fancyhdr}
