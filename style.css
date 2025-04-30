@@ -19,12 +19,25 @@ html[lang='grc'] {
 .chapter {
     margin-bottom: 1rem;
 }
+
 .chapter-number {
-    font-family: __PROJECT_FONT__;
-    font-weight: bold;
-    margin-right: 0.5rem;
-    color: #444;
+	font-family: __PROJECT_FONT__;
+	font-weight: bold;
+	color: #444;
+  font-size: 3em;
+  line-height: 1;
 }
+
+html[lang='hbo']  > body > div > div > .chapter-number {
+  float: right;
+  margin-left: 0.2em; /* Adjust spacing to the text */
+}
+
+html[lang='grc']  > body > div > div > .chapter-number {
+  float: left;
+  margin-right: 0.2em; /* Adjust spacing to the text */
+}
+
 .verse {
     display: inline;
 }
